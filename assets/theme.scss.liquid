@@ -1,0 +1,102 @@
+@font-face {
+    font-family: "CerebriSans-Regular";
+    src: url("{{ 'CerebriSans-Regular.ttf' | asset_url }}") format('truetype');
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+}
+
+.sticky-header {
+    position: fixed;
+    top: -80px;
+    transition: top 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.sticky-header.sticky {
+    top: 0;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 70px;
+}
+
+.header__links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding: 0;
+    padding-left: 50px;
+    font-family: "CerebriSans-Regular", sans-serif;
+    color: black;
+
+    a {
+        text-decoration: none;
+        color: #737373;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: #559A5C;
+    }
+}
+
+.header__right {
+    display: flex;
+}
+
+.header__icons {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.header__icons-cart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #E3F0BD;
+    height: 45px;
+    width: 45px;
+
+
+    span {
+        position: absolute;
+        right: -4px;
+        bottom: -4px;
+        background-color: #FFFFFF;
+        border: 1px solid black;
+        border-radius: 50%;
+        height: 17px;
+        width: 17px;
+        font-size: 14px;
+        color: black;
+        text-align: center;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.dummy-page {
+    height: 2000px;
+    background-color: #F5F5F5;
+}
