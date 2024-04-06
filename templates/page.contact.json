@@ -1,0 +1,23 @@
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Browse our latest products"
+          }
+        }
+      },
+      "block_order": [
+        "heading"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "image_banner"
+  ]
+}

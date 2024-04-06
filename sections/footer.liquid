@@ -1,0 +1,75 @@
+<link rel="stylesheet" href="{{ 'footer.scss' | asset_url }}">
+
+<div class="footer">
+    {% render 'newsletter-signup' %}
+</div>
+
+{% schema %}
+    {
+      "name": "newsletter",
+      "tag": "section",
+      "class": "section",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "paragraph test"
+        },
+        {
+          "type": "header",
+          "content": "header test"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "heading",
+          "name": "heading",
+          "limit": 1,
+          "settings": [
+            {
+              "type": "inline_richtext",
+              "id": "heading2",
+              "default": "Subscribe to our emails",
+              "label": "headingLabel"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "name": "paragraph",
+          "limit": 1,
+          "settings": [
+            {
+              "type": "richtext",
+              "id": "text",
+              "default": "<p>Be the first to know about new collections and exclusive offers.</p>",
+              "label": "first"
+            }
+          ]
+        },
+        {
+          "type": "email_form",
+          "name": "email form",
+          "limit": 1
+        },
+        {
+          "type": "@app"
+        }
+      ],
+      "presets": [
+        {
+          "name": "presets",
+          "blocks": [
+            {
+              "type": "heading"
+            },
+            {
+              "type": "paragraph"
+            },
+            {
+              "type": "email_form"
+            }
+          ]
+        }
+      ]
+    }
+  {% endschema %}
