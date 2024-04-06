@@ -1,22 +1,23 @@
 <link rel="stylesheet" href="{{ 'faq-stylesheet.scss' | asset_url }}" media="print" onload="this.media='all'">
 
-<h3> I'm an faq pge</h3>
+<h3>{{ section.settings.faq_title }}</h3>
+<p>{{ section.settings.faq_description }}</p>
+
 <div class="page-width page-width--narrow">
   <div class="faq-container">
     <div class="tabs">
-    	{% for block in section.blocks %}
-      		{% assign item = block.settings %}
-      		<div class="tab">
-      			<input type="checkbox" id="faq_checkbox_{{ forloop.index }}" class="faq-checkbox">
-        		<label for="faq_checkbox_{{ forloop.index }}" class="tab-label button button--primary">{{ item.question }}</label>
-        		<div class="tab-content">{{ item.answer }}</div>
-      		</div>
-      	{% endfor %}
+      {% for block in section.blocks %}
+        <div class="tab">
+          <input type="checkbox" id="faq_checkbox_{{ forloop.index }}" class="faq-checkbox">
+          <label for="faq_checkbox_{{ forloop.index }}" class="tab-label button button--primary">{{ block.settings.question }}</label>
+          <div class="tab-content">{{ block.settings.answer }}</div>
+        </div>
+      {% endfor %}
     </div>
   </div>
 </div>
 
-<h3> I'm an faq pge</h3>
+<h3> I'm an faq page</h3>
 
 
 {% schema %}
@@ -30,12 +31,6 @@
                 "id": "faq_title",
                 "default": "Questions and Answers",
                 "label": "Title"
-            },
-            {
-                "type": "text",
-                "id": "faq_description",
-                "default": "Questions and Answers",
-                "label": "Description"
             }
         ],
         "blocks": [
