@@ -1,3 +1,13 @@
 [
-
+  {
+    "name": "FAQ Section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Frequently Asked Questions"
+      }
+    ]
+  }
 ]
