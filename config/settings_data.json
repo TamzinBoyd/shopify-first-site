@@ -13,36 +13,36 @@
           "faq_tRVTDV": {
             "type": "faq",
             "settings": {
-              "question": "Do you have a question?",
-              "answer": "<p>I have an answer<\/p>"
+              "question": "As a Web Developer, what do you believe your responsibilities are?",
+              "answer": "<p>As a web developer, my main responsibility is to deliver high-quality digital experiences.<\/p><p>This means creating functional and accessible websites through the use of coding languages, frameworks, and technologies.<\/p><p>Part of this is ensuring that solutions are compatible across various platforms \/ browsers.<\/p><p>Working as part of a wider team, communication is key. I feel it's important to be able to communicate in a non-technical well to justify solutions and challenges, working together to overcome any barriers.<\/p><p>Attention to detail, turning designs into pixel perfect websites.<\/p><p>Understanding problems and the ability to resolve them with efficient solutions. Whilst having the confidence to query anything that's unclear. <\/p><p>Acceptance that technology is always evolving, staying upto date with the latest languages and best practises.<\/p>"
             }
           },
           "faq_hMdPFQ": {
             "type": "faq",
             "settings": {
-              "question": "Do you have a question?",
-              "answer": "<p>I have an answer<\/p>"
+              "question": "What steps do you feel you could take to balance demanding project requirements?",
+              "answer": "<p>Organisation, planning and communication are key to me.<\/p><p>Where agile working is in place, I would use this to help prioritise. In my current role we have a weekly meeting with the project team where the Project Manager dictates the priorities, generally motivated by the client. We set deadlines and manage expectations.<\/p><p>At times I can face various demands, for example tickets from client services as well as new build projects. As a business we aim to decide priorities together but in reality, it can often be one PM against another. <\/p><p>To balance this I prioritise to ensure effective project management and successful outcomes. <\/p><p>Firstly, planning is essential. I  start by breaking down the ticket into manageable tasks, setting clear objectives, and establishing realistic timelines. This helps to prevent overwhelm and ensures that each aspect of the project receives adequate attention.<\/p><p>Regular updates with team members helps to keep everyone informed of progress, addressing any challenges or roadblocks promptly. <\/p><p>Furthermore, I believe in maintaining a flexible mindset. While it's important to adhere to the initial project plan, unexpected challenges or new priorities may arise. <\/p>"
             }
           },
           "faq_JQByAk": {
             "type": "faq",
             "settings": {
-              "question": "Do you have a question?",
-              "answer": "<p>I have an answer<\/p>"
+              "question": "What sources do you use to obtain new knowledge of the languages you utilise?",
+              "answer": "<p>I'm a visual learner so find that I absorb information best by watching a video then trying it out myself. <\/p><p>I subscribe to various useful YouTube channels such as Web Dev Simplified and Coding with Mosh. It was great to see that Shopify have their own channel.<\/p><p>To keep more up to date with industry news I listen to podcasts like Syntax and Developer Tea.<\/p><p>I also love working as part of a dev team, I find it a great way to share knowledge, best practise and technology updates.<\/p>"
             }
           },
           "faq_pec8tV": {
             "type": "faq",
             "settings": {
-              "question": "Do you have a question?",
-              "answer": "<p>I have an answer<\/p>"
+              "question": "Explain how you optimize and improve the performance of a website.",
+              "answer": "<p>Optimising and improving the performance of a website is crucial for enhancing user experience. While the specific techniques may vary depending on the technology stack, I typically focus on several key strategies to achieve this goal.<\/p><p>Firstly, I streamline the website by optimising images, ensuring they are appropriately sized, and utilising lazy loading where possible.<\/p><p>Though my experience with caching is limited, I recognise its potential to enhance performance by storing frequently accessed resources.<\/p><p> Additionally, I aim to minimise API calls and database queries to reduce server response times.<\/p><p>In the past, I have used tools like Lighthouse to assess the performance of a site, enabling me to identify areas for improvement and implement necessary optimisations.<\/p>"
             }
           },
           "faq_mXFjBy": {
             "type": "faq",
             "settings": {
-              "question": "Do you have a question?",
-              "answer": "<p>I have an answer<\/p>"
+              "question": "Explain your most standard method of problem solving a requirement.",
+              "answer": "<p>I find it best to break a problem down into smaller chunks, for example a JIRA ticket with a brief that is something I've not encountered before.<\/p><p>I'd take some time to read and fully understand the ticket, making any queries to the ticket owner if required.<\/p><p>For more complex solutions I might bounce some ideas of a lead developer. I find their knowledge valuable to avoid going down a rabbit hole, especially when working with new tech stacks where I don't fully understand the restrictions yet.<\/p><p>I'm a big fan of Notion so usually create a note with a list of To Dos, which makes the task less daunting. If I'm working on a new build \/ larger project I create a board to manage sub tasks.<\/p><p>Then I get to coding. I tend to start by fleshing out the basics; get my html structure, check data responses and add functionality. Once I'm happy with this I then get styling.<\/p>"
             }
           }
         },
