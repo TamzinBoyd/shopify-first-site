@@ -1,5 +1,67 @@
 {
   "current": {
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+        }
+      },
+      "dummy_section": {
+        "type": "dummy_section",
+        "settings": {
+        }
+      },
+      "faq": {
+        "type": "faq",
+        "blocks": {
+          "faq_tRVTDV": {
+            "type": "faq",
+            "settings": {
+              "question": "Do you have a question?",
+              "answer": "<p>I have an answer<\/p>"
+            }
+          },
+          "faq_hMdPFQ": {
+            "type": "faq",
+            "settings": {
+              "question": "Do you have a question?",
+              "answer": "<p>I have an answer<\/p>"
+            }
+          },
+          "faq_JQByAk": {
+            "type": "faq",
+            "settings": {
+              "question": "Do you have a question?",
+              "answer": "<p>I have an answer<\/p>"
+            }
+          },
+          "faq_pec8tV": {
+            "type": "faq",
+            "settings": {
+              "question": "Do you have a question?",
+              "answer": "<p>I have an answer<\/p>"
+            }
+          },
+          "faq_mXFjBy": {
+            "type": "faq",
+            "settings": {
+              "question": "Do you have a question?",
+              "answer": "<p>I have an answer<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "faq_tRVTDV",
+          "faq_hMdPFQ",
+          "faq_JQByAk",
+          "faq_pec8tV",
+          "faq_mXFjBy"
+        ],
+        "settings": {
+          "faq_title": "Questions and Answers"
+        }
+      }
+    },
     "content_for_index": [
 
     ]
