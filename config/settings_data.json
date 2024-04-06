@@ -1,5 +1,6 @@
 {
   "current": {
+    "color_secondary": "#3daf26",
     "sections": {
       "header": {
         "type": "header",
