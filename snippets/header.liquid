@@ -19,11 +19,13 @@
             </ul>
         </div>
         <div class="header__right">
-            <form action="/search">
-                <input class="header__search hidden" placeholder="Search our products" type="search"/>
-            </form>
+            <div class="header__search-container hidden">
+                <form action="/search" >
+                    <input class="header__search-box" placeholder="Search our products" type="search"/>
+                </form>
+            </div>
             <div class="header__icons">
-                <a href="" aria-label="Search">
+                <button class="search-icon" aria-label="Search">
                     <img
                         width="23"
                         height="23"
@@ -31,7 +33,7 @@
                         src="{{' icon-search.svg ' | asset_url }}"
                         alt="Search Icon"
                     />
-                </a>
+                </button>
                 <a href="/account" aria-label="Account">
                     <img
                         width="23"
@@ -57,10 +59,10 @@
 </header>
 
 <script>
+    // Add sticky scroll
     let lastScrollTop = 0;
 
     window.addEventListener("scroll", function() {
-
         let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
         if (currentScroll > lastScrollTop) {
@@ -71,4 +73,12 @@
 
         lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
     }, false);
+
+    // Handle show / hide of search box
+    const searchBox = document.querySelector('.header__search-container');
+    const searchBtn = document.querySelector('.search-icon');
+
+    searchBtn?.addEventListener('click', () => {
+        searchBox?.classList.toggle('hidden');
+    })
 </script>

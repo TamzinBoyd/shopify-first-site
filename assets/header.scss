@@ -54,6 +54,20 @@ body {
 
 .header__right {
     display: flex;
+    position: relative;
+}
+
+.header__search-container {
+    position: absolute;
+    height: 100%;
+    right: 190px;
+    display: flex;
+    align-items: center;
+}
+
+.header__search-box {
+    height: 30px;
+    padding: 10px;
 }
 
 .header__icons {
@@ -90,6 +104,12 @@ body {
         color: black;
         text-align: center;
     }
+}
+
+.search-icon {
+    background-color: white;
+    border: none;
+    cursor: pointer;
 }
 
 .hidden {
