@@ -1,51 +1,5 @@
 {
   "current": {
-    "sections": {
-      "header": {
-        "type": "header",
-        "settings": {
-        }
-      },
-      "dummy_section": {
-        "type": "dummy_section",
-        "settings": {
-        }
-      },
-      "faq": {
-        "type": "faq",
-        "blocks": {
-          "faq_fmW49w": {
-            "type": "faq",
-            "settings": {
-              "question": "test 1",
-              "answer": "<p>test 2<\/p>"
-            }
-          },
-          "faq_z3tcMD": {
-            "type": "faq",
-            "settings": {
-              "question": "Do you have a question?",
-              "answer": "<p>I have an answer<\/p>"
-            }
-          },
-          "faq_DbDexE": {
-            "type": "faq",
-            "settings": {
-              "question": "Do you have a question?",
-              "answer": "<p>I have an answer<\/p>"
-            }
-          }
-        },
-        "block_order": [
-          "faq_fmW49w",
-          "faq_z3tcMD",
-          "faq_DbDexE"
-        ],
-        "settings": {
-          "faq_title": "Questions and Answers"
-        }
-      }
-    },
     "content_for_index": [
 
     ]
