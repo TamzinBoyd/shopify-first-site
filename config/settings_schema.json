@@ -19,23 +19,6 @@
     ]
   },
   {
-    "name": "newsletter",
-    "settings": [
-      {
-        "type": "text",
-        "id": "newsletterTitle",
-        "label": "Newsletter Title",
-        "default": "Subscribe to our Newsletter"
-      },
-      {
-        "type": "textarea",
-        "id": "newsletterDescription",
-        "label": "Newsletter Description",
-        "default": "Sign up to receive updates and exclusive offers."
-      }
-    ]
-  },
-  {
     "name": "Colours",
     "settings": [
       {
