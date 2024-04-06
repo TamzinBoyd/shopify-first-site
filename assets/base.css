@@ -1,0 +1,6 @@
+
+@import '../config/settings_schema.json';
+
+:root {
+    --color_secondary: {{ settings.color_secondary }};
+}

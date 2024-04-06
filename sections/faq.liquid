@@ -1,69 +1,67 @@
-<link rel="stylesheet" href="{{ 'faq-stylesheet.scss' | asset_url }}">
+<link rel="stylesheet" href="{{ 'faq-stylesheet.css' | asset_url }}">
+<div class="faq-container">
+  <h3>{{ section.settings.faq_title }}</h3>
 
-<h3>{{ section.settings.faq_title }}</h3>
-
-<div class="page-width page-width--narrow">
-  <div class="faq-container">
-    <div class="tabs">
-      {% for block in section.blocks %}
-        <div class="tab">
-            {% comment %} this is triggering the open / close {% endcomment %}
-          <input type="checkbox" id="faq_checkbox_{{ forloop.index }}" class="faq-checkbox">
-          <button>
-            <label for="faq_checkbox_{{ forloop.index }}" class="tab-label">{{ block.settings.question }}</label>
-                <img
-                    width="20"
-                    height="20"
-                    loading="lazy"
-                    src="{{' down-chevron.svg ' | asset_url }}"
-                    alt="Chevron"
-                />
-          </button>
-          <div class="tab-content">{{ block.settings.answer }}</div>
-        </div>
-      {% endfor %}
-    </div>
+  <div class="tabs">
+    {% for block in section.blocks %}
+      <div class="tab">
+          {% comment %} this is triggering the open / close {% endcomment %}
+        <input
+          type="checkbox"
+          id="faq_checkbox_{{ forloop.index }}"
+          class="faq-checkbox">
+        <button class="faq_question">
+          <label for="faq_checkbox_{{ forloop.index }}" class="tab-label">{{ block.settings.question }}</label>
+          <img
+            width="20"
+            height="20"
+            loading="lazy"
+            src="{{' down-chevron.svg ' | asset_url }}"
+            alt="Chevron" />
+        </button>
+        <div class="tab-content">{{ block.settings.answer }}</div>
+      </div>
+    {% endfor %}
   </div>
 </div>
 
-<h3> I'm an faq page</h3>
-
 
 {% schema %}
-    {
-        "name": "FAQ",
-        "tag": "section",
-        "class": "spaced-section",
+  {
+    "name": "FAQ",
+    "tag": "section",
+    "class": "spaced-section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "faq_title",
+        "default": "Questions and Answers",
+        "label": "Title"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "FAQ Item",
+        "type": "faq",
         "settings": [
-            {
-                "type": "text",
-                "id": "faq_title",
-                "default": "Questions and Answers",
-                "label": "Title"
-            }
-        ],
-        "blocks": [
-            {
-                "name": "FAQ Item",
-                "type": "faq",
-                "settings": [
-                    {
-                        "type": "text",
-                        "id": "question",
-                        "label": "Question",
-                        "default": "Do you have a question?"
-                    },
-                    {
-                        "type": "richtext",
-                        "id": "answer",
-                        "label": "Answer",
-                        "default": "<p>I have an answer</p>"
-                    }
-                ]
-            }
-        ],
-        "presets": [
-            { "name": "FAQ Block" }
+          {
+            "type": "text",
+            "id": "question",
+            "label": "Question",
+            "default": "Do you have a question?"
+          }, {
+            "type": "richtext",
+            "id": "answer",
+            "label": "Answer",
+            "default": "<p>I have an answer</p>"
+          }
         ]
-    }
+      }
+    ],
+    "presets": [
+      {
+        "name": "FAQ Block"
+      }
+    ]
+  }
 {% endschema %}

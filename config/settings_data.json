@@ -67,10 +67,8 @@
     ]
   },
   "presets": {
-    "Default": {
-      "content_for_index": [
-
-      ]
+    "test": {
+      "color_secondary": "#737373"
     }
   }
 }
