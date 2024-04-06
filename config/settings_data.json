@@ -7,11 +7,6 @@
         "settings": {
         }
       },
-      "dummy_section": {
-        "type": "dummy_section",
-        "settings": {
-        }
-      },
       "faq": {
         "type": "faq",
         "blocks": {
@@ -68,8 +63,10 @@
     ]
   },
   "presets": {
-    "test": {
-      "color_secondary": "#737373"
+    "Default": {
+      "content_for_index": [
+
+      ]
     }
   }
 }
